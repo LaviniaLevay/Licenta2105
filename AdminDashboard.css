@@ -1,0 +1,32 @@
+﻿.admin-dashboard {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.stats-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.stat-card {
+    background: #f9f9f9;
+    border-left: 5px solid #4caf50;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.recent-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .recent-list li {
+        background: #f1f1f1;
+        margin-bottom: 0.5rem;
+        padding: 0.8rem;
+        border-radius: 6px;
+    }

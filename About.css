@@ -1,0 +1,84 @@
+﻿.about-fullscreen {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+.about-overlay {
+    width: 100%;
+    max-width: 960px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 3rem 2.5rem;
+}
+
+.about-content {
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c2c2c;
+    line-height: 1.8;
+}
+
+    .about-content h1 {
+        color: #388e3c;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        border-bottom: 2px solid #a5d6a7;
+        padding-bottom: 0.5rem;
+    }
+
+    .about-content h2 {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+        color: #2e7d32;
+        position: relative;
+        padding-left: 0.7rem;
+        font-weight: 600;
+    }
+
+        .about-content h2::before {
+            content: '';
+            width: 5px;
+            height: 100%;
+            background-color: #81c784;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 2px;
+        }
+
+    .about-content p {
+        margin-top: 1rem;
+        font-size: 1.08rem;
+        color: #444;
+    }
+
+    .about-content ul {
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+    }
+
+        .about-content ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+            color: #333;
+        }
+
+.quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #c8e6c9;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}

@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="mentorway-client\Services\**" />
+    <Content Remove="mentorway-client\Services\**" />
+    <EmbeddedResource Remove="mentorway-client\Services\**" />
+    <None Remove="mentorway-client\Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\FeedbackController.cs" />
+    <Compile Remove="Models\VerificareCodDto.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="mentorway-client\src\FeedbackForm.js" />
+    <None Remove="mentorway-client\src\FeedbackList.js" />
+    <None Remove="mentorway-client\src\ProgressCard.js" />
+    <None Remove="mentorway-client\src\styles\Feedback.css" />
+    <None Remove="mentorway-client\src\VerificaCont.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties mentorway-client_4package_1json__JsonSchema="https://json.schemastore.org/package.manifest.json" /></VisualStudio></ProjectExtensions>
+
+</Project>
